@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="UTF-8">
+  <title>アイリス薬局</title>
+  <meta name="description" content="サイトの説明文">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="canonical" href="あなたのサイトURL">
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <!-- OGP設定 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="あなたのサイトURL" />
+  <meta property="og:image" content="SNSで表示させたい画像のパス" />
+  <meta property="og:title" content="ページタイトル" />
+  <meta property="og:description" content="サイトの説明文" />
+  <!-- Facebook用設定 -->
+  <meta property="fb:app_id" content="facebookのApp ID" />
+  <meta property="article:publisher" content="FacebookページのURL">
+  <!-- Twitter用設定 -->
+  <meta name="twitter:card" content="Twitterカードの種類">
+  <meta name="twitter:site" content="@ユーザー名">
+  <!-- スタイルシートはここから -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+  <!-- フォント読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Klee+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ******************* HEADER ******************** -->
+  <header class="header">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="mb-3 catchcopy">
+        <h1>そばで支える「かかりつけ薬局」へ</h1>
+        <p class="text-muted catchcopy-ex">お薬のこと、健康のこと、何でもお気軽にご相談ください。 </p>
+      </div>
+      <div class="container main-img">
+        <div class="d-md-flex flex-row justify-content-between">
+          <div class="hd-c1 bg-white p-3 col-md-7 mr-md-3 mb-3 mb-md-0">
+            <!-- <p class="h2"><span><i class="fas fa-phone mr-3"></i></span>03-1234-5678</p>
+                      <div class="d-flex align-items-center mb-2">
+                        <p class="bg-blue rounded-pill px-3 py-2 mr-3 mb-0 text-center col-3 text-white font-weight-bold">受付時間</p>
+                        <p class="h4">9:00～13:00 / 15:00～19:00</p>
+                      </div> -->
+            <div class="text-center">
+              <p class="h4 section-heading text-uppercase">受付時間</h2>
+            </div>
+            <table class="hours-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>水</th>
+                  <th>木</th>
+                  <th>金</th>
+                  <th>土</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>午前<br><span class="time">9:00-13:00</span></th>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                </tr>
+                <tr>
+                  <th>午後<br><span class="time">14:00-18:00</span></th>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td>〇</td>
+                  <td class="closed">／</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- <p>※ 日曜・祝日は休み ( <span><i class="fas fa-phone mr-3" style="width: 0.5rem;"></i></span>092-XXX-XXXX)</p> -->
+            <p>※ 日曜・祝日は休み</p>
+          </div>
+          <div class="hd-c2 bg-white p-3 col-md-4 mr-md-3 mb-3 mb-md-0">
+            <p class="h4 mb-3 text-center">採用情報</p>
+            <p class="mb-0">新しい仲間を募集しています。</p>
+            <p>詳しくは下記ページをご覧ください。</p>
+            <a class="btn bg-pink text-white" href="contact/index.html" role="button">採用サイトへ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- ******************* NAVI ******************** -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="w-40"><a class="navbar-brand d-flex" href="/"><img src="img/favicon.png" alt="" class=" logo mr-3">
+            <p class="mb-0">アイリス薬局</p>
+          </a></div>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
+          aria-expanded="false" aria-label="レスポンシブ・ナビゲーションバー">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navber">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="/">薬局について</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ご挨拶</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">よくあるご質問</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">アクセス・営業時間</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <!-- ******************* 薬局について ******************** -->
+    <section class="pb-6">
+
+      <div class="container my-5">
+        <h2 class="h1 font-weight-bold text-center pb-5">薬局について</h2>
+
+
+        <div class="row mb-5">
+          <div class="col-md-4 mb-4">
+            <img src="img/appeal01.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-8 mt-lg-5">
+            <h3 class="ml-lg-3">待ち時間の少ないスムーズな調剤</h3>
+            <hr class="ml-lg-n5 border-blue border-top">
+            <p class="ml-lg-3">
+              処方せんの事前送信（LINE）に対応しております。事前にスマホやファクスから処方せんをお送りいただくことで、ご来局時のお薬の待ち時間を大幅に短縮できます。お仕事帰りや、小さなお子様連れの方、ご高齢の患者様も、お薬の受け取りがスムーズになり、時間を有効にご活用いただけます。
+            </p>
+            <a href="https://line.me/R/ti/p/..." class="line-button d-flex">
+                   <i class="fab fa-line"></i><div>LINEで処方せんを送信</div>
+                </a>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-4 mb-4 order-1 order-md-2">
+            <img src="img/appeal02.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-8 mt-lg-5 order-2 order-md-1">
+            <h3 class="ml-lg-3">すべての医療機関の処方せんに対応</h3>
+            <hr class="mr-lg-n5 border-blue border-top">
+            <p class="ml-lg-3">
+              全国どちらの病院・クリニックの処方せんでもお受けいたします。大きな総合病院の処方せんや、複数科目の処方せんも安心してお持ちください。また、現在服用中のお薬との飲み合わせチェックや、ジェネリック医薬品（後発医薬品）への切り替えに関するご相談も、薬剤師が丁寧にお答えいたします。
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-4 mb-4">
+            <img src="img/appeal03.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-8 mt-lg-5">
+            <h3 class="ml-lg-3">バリアフリーで安心安全</h3>
+            <hr class="ml-lg-n5 border-blue border-top">
+            <p class="ml-lg-3">
+              エントランスから待合室、お手洗いまで、段差のない完全バリアフリー設計となっております。車いすやベビーカーをご利用の方でも、そのままスムーズにお入りいただけます。小さなお子様連れの方や、足腰に不安のある方にも快適にご利用いただけるよう、清潔で落ち着いた空間づくりを心がけております。お身体の不自由な方は、インターホンでお知らせいただければスタッフがサポートいたします。
+            </p>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <img src="img/medical-img01.jpg" alt="" class="img-fluid mb-3">
+            <h3 class="h5 font-weight-bold">一般歯科</h3>
+            <p class="desc">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛</p>
+            <div class="text-center">
+              <a class="btn btn-outline-dark" href="sample/index.html" role="button">詳しく見る</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <img src="img/medical-img02.jpg" alt="" class="img-fluid mb-3">
+            <h3 class="h5 font-weight-bold">小児歯科</h3>
+            <p class="desc">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛</p>
+            <div class="text-center">
+              <a class="btn btn-outline-dark" href="sample/index.html" role="button">詳しく見る</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <img src="img/medical-img01.jpg" alt="" class="img-fluid mb-3">
+            <h3 class="h5 font-weight-bold">予防歯科</h3>
+            <p class="desc">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛</p>
+            <div class="text-center">
+              <a class="btn btn-outline-dark" href="sample/index.html" role="button">詳しく見る</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <img src="img/medical-img02.jpg" alt="" class="img-fluid mb-3">
+            <h3 class="h5 font-weight-bold">矯正歯科</h3>
+            <p class="desc">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛</p>
+            <div class="text-center">
+              <a class="btn btn-outline-dark" href="sample/index.html" role="button">詳しく見る</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <img src="img/medical-img01.jpg" alt="" class="img-fluid mb-3">
+            <h3 class="h5 font-weight-bold">口腔外科</h3>
+            <p class="desc">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛</p>
+            <div class="text-center">
+              <a class="btn btn-outline-dark" href="sample/index.html" role="button">詳しく見る</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <img src="img/medical-img02.jpg" alt="" class="img-fluid mb-3">
+            <h3 class="h5 font-weight-bold">審美歯科</h3>
+            <p class="desc">親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛</p>
+            <div class="text-center">
+              <a class="btn btn-outline-dark" href="sample/index.html" role="button">詳しく見る</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!-- ******************* ご挨拶 ******************** -->
+    <section class="py-5 bg-lightblue">
+      <div class="container tokucho my-5 greeting">
+        <h2 class="h1 font-weight-bold text-center pb-5">ご挨拶</h2>
+        <div class="row mb-4">
+
+          <div class="col-md-5 mb-4 mb-md-0">
+            <img src="img/representative.png" alt="" class="border">
+          </div>
+          <div class="col-md-7">
+            <h3 class="d-flex align-items-center">地域の皆様の健康を支えるパートナー</h3>
+            <p class="p-dn">アイリス薬局のホームページをご覧いただき、ありがとうございます。</p>
+            <p>当薬局は、地域の皆様がいつでも安心して頼れる「かかりつけ薬局」を目指し、開局いたしました。</p>
+            <p class="ph-dn">
+              全国どちらの医療機関の処方せんにも対応しているほか、LINEによる事前送信システムの導入など、患者様のお時間を大切にするスムーズな調剤に努めております。また、院内は完全なバリアフリー設計となっており、車いすやベビーカーをご利用の方、足腰に不安のある方でもストレスなくお過ごしいただけます。
+            </p>
+            <p class="ph-dn">お薬のことはもちろん、健康管理や介護に関するご相談など、どうぞお気軽にお立ち寄りください。スタッフ一同、地域の皆様の健やかな毎日をサポートしてまいります。</p>
+            <p class="name small ph-dn">管理薬剤師 / 代表</p>
+            <p class="name ph-dn">古賀 祥史</p>
+          </div>
+
+        </div>
+        <div>
+          <p class="pc-dn">
+            全国どちらの医療機関の処方せんにも対応しているほか、LINEによる事前送信システムの導入など、患者様のお時間を大切にするスムーズな調剤に努めております。また、院内は完全なバリアフリー設計となっており、車いすやベビーカーをご利用の方、足腰に不安のある方でもストレスなくお過ごしいただけます。
+          </p>
+          <p class="pc-dn">お薬のことはもちろん、健康管理や介護に関するご相談など、どうぞお気軽にお立ち寄りください。スタッフ一同、地域の皆様の健やかな毎日をサポートしてまいります。</p>
+          <p class="name small pc-dn">管理薬剤師 / 代表</p>
+          <p class="name pc-dn"> 斉藤 忠之</p>
+
+        </div>
+      </div>
+      <div class="container-fluid pb-3">
+        <div class="row mx-0 justify-content-center">
+
+          <figure class="figure col-md-3 p-0 mb-5 mr-3">
+            <img src="img/photo01.jpg" class="figure-img img-fluid" alt="TOILLETの画像">
+            <figcaption class="figure-caption">受付</figcaption>
+          </figure>
+          <figure class="figure col-md-3 p-0 mb-5 mr-3">
+            <img src="img/photo02.jpg" class="figure-img img-fluid" alt="診察室の画像">
+            <figcaption class="figure-caption">待合室</figcaption>
+          </figure>
+          <figure class="figure col-md-3 p-0 mb-5">
+            <img src="img/photo03.jpg" class="figure-img img-fluid" alt="受付の画像">
+            <figcaption class="figure-caption">トイレ</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- ******************* よくあるご質問 ******************** -->
+<section class="faq-section py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-5 heading"><span>よくあるご質問</span></h2>
+    
+    <div class="accordion" id="faqAccordion">
+      <div class="card shadow-box mb-3 border-0">
+        <div class="card-header bg-lightblue border-0 py-3" id="faqHeading1">
+          <h3 class="mb-0">
+            <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center text-dark font-weight-bold text-decoration-none" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+              <span>Q. 処方せんの受付は、事前にアプリやLINEで送ることはできますか？</span>
+              <i class="fas fa-chevron-down text-muted small"></i>
+            </button>
+          </h3>
+        </div>
+
+        <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+          <div class="card-body bg-lightblue px-4 pb-4 text-secondary" style="border-radius: 0 0 16px 16px;">
+            はい、対応しております。事前にLINEにて処方せんをお送りいただくことで、ご来局時のお待ち時間を短縮してお薬をお渡しすることが可能です。<br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow-box mb-3 border-0">
+        <div class="card-header bg-lightblue border-0 py-3" id="faqHeading2">
+          <h3 class="mb-0">
+            <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center text-dark font-weight-bold text-decoration-none collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+              <span>Q. 他の病院でもらったお薬も一緒に相談できますか？</span>
+              <i class="fas fa-chevron-down text-muted small"></i>
+            </button>
+          </h3>
+        </div>
+
+        <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+          <div class="card-body bg-lightblue px-4 pb-4 text-secondary" style="border-radius: 0 0 16px 16px;">
+            もちろんご相談いただけます。複数の医療機関からお薬が出ている場合、飲み合わせや重複がないかを専門の薬剤師が確認いたします。お薬手帳をぜひお持ちください。
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow-box mb-3 border-0">
+        <div class="card-header bg-lightblue border-0 py-3" id="faqHeading3">
+          <h3 class="mb-0">
+            <button class="btn btn-link btn-block text-left d-flex justify-content-between align-items-center text-dark font-weight-bold text-decoration-none collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+              <span>Q. クレジットカードや電子マネーは使えますか？</span>
+              <i class="fas fa-chevron-down text-muted small"></i>
+            </button>
+          </h3>
+        </div>
+
+        <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+          <div class="card-body bg-lightblue px-4 pb-4 text-secondary" style="border-radius: 0 0 16px 16px;">
+            各種クレジットカード、交通系IC、QRコード決済に対応しております。お会計の際にお気軽にお申し付けください。
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  </main>
+  <!-- ******************* FOOTER ******************** -->
+  <footer class="footer bg-lightblue">
+    <div class="container py-5">
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>アイリス薬局</h2>
+          <p class="mb-3">〒000-0000 〇〇市〇〇町1-2-3</p>
+          <table class="table mb-2 table-sm">
+            <thead class="thead-blue text-white">
+              <tr>
+                <th class="pl-2">受付時間</th>
+                <th scope="col" class="text-center">月</th>
+                <th scope="col" class="text-center">火</th>
+                <th scope="col" class="text-center">水</th>
+                <th scope="col" class="text-center">木</th>
+                <th scope="col" class="text-center">金</th>
+                <th scope="col" class="text-center">土</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="pl-2">9:00~13:00</th>
+                <td class="text-center">〇</td>
+                <td class="text-center">〇</td>
+                <td class="text-center">〇</td>
+                <td class="text-center">〇</td>
+                <td class="text-center">〇</td>
+                <td class="text-center">〇</td>
+              </tr>
+              <tr class="border-bottom">
+                <th scope="row" class="pl-2">14:00~18:00</th>
+                <td class="text-center">〇</td>
+                <td class="text-center">〇</td>
+                <td class="text-center">〇</td>
+                <td class="text-center">〇</td>
+                <td class="text-center">〇</td>
+                <td class="text-center">／</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="text-right mb-4 small"> 休み：日曜・祝日</p>
+
+          <div class="d-md-flex flex-row justify-content-between">
+            <div class="bg-blue rounded-lg col-md-6 mr-md-3 mb-lg-0 tel-box">
+              <p class="text-white h3"><span><i class="fas fa-phone mr-3"></i></span>電話でのお問合せ</p><p class="text-white mb-0 tel">092-XXX-XXXX</p>
+              <!-- <div class="d-flex align-items-center">
+                <p class="bg-white rounded-pill px-3 py-2 mr-2 text-center h6 text-blue font-weight-bold"
+                  style="line-height: 1rem;">受付時間</p>
+                <p class="text-white h6">9:00～13:00 / 14:00～18:00</p>
+              </div> -->
+            </div>
+            <div class="bg-pink rounded-lg col-md-6 mb-lg-0">
+              <a class="btn bg-pink text-white mb-0 ex p-3" href="contact/index.html" role="button"><p class="text-white h4">採用情報</p><p>詳しくはこちら</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8456209581896!2d130.4206535764026!3d33.59017504964648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191c0e3a07477%3A0x13f1c1f6d90d5656!2z5Y2X5aSa6aeF!5e0!3m2!1sja!2sjp!4v1680000000000"
+            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="container-fulid">
+        <p class="text-center mb-0">（C）アイリス薬局. All Rights Reserved.</p>
+    </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(window).on('scroll', function () {
+      h = $(window).height();
+      $('header nav').toggleClass('fixed', $(this).scrollTop() > h)
+    });
+
+  </script>
+
+</body>
+
+</html>

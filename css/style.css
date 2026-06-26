@@ -1,0 +1,404 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body,
+a,
+.table {
+  color: #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.3rem;
+}
+
+.text-blue {
+  color: #6b90db !important;
+}
+
+.bg-blue,
+.thead-blue,
+.badge-primary {
+  background-color: #a58baa !important;
+}
+
+.bg-lightblue {
+  background-color: #f9f9ff !important;
+}
+
+.bg-pink {
+  background-color: #97ac72
+ !important;
+}
+
+.border-blue {
+  border-color: #585d8a !important;
+}
+
+.border-top {
+  border-width: 2px !important;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------
+    ファーストビュー
+-------------------------------------------------- */
+.header {
+  height: 100vh;
+  position: relative;
+}
+
+.header .jumbotron {
+  position: relative;
+  background-image: url("../img/main-img.png");
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  
+}
+
+.catchcopy{
+    height: 100%;
+    width: 100%;
+}
+h1{
+  color: #49404b;
+  font-size: 2.4rem;
+/* text-shadow: X方向 Y方向 ぼかし 色, X方向 Y方向 ぼかし 色; */
+  text-shadow: 4px 4px 10px #c7c7c7;
+  font-family: "游明朝", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "MS PMincho", serif;
+  font-weight: 600; /* やや細め〜標準で上品に */
+  letter-spacing: 0.05em; /* 文字間を少し広げて洗練させる */
+
+}
+.hd-c1{
+  /* box-shadow: 10px 8px 0px rgba(165, 139, 170, 1); */
+  height: 230px;
+}
+.hd-c2{
+  /* box-shadow: 10px 8px 0px rgba(151, 172, 114, 1); */
+}
+.hd-c2 a{
+  width: 100%;
+  height: 60px;
+/* aタグをFlexboxにする */
+  display: flex;
+  
+  /* 横方向の真ん中寄せ */
+  justify-content: center;
+  
+  /* 縦方向の真ん中寄せ */
+  align-items: center;
+}
+/*営業時間----------------------------------------*/
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f8f9fa;
+}
+
+.hours-table th, .hours-table td {
+  border: 1px solid #d7ccc8; /* 温かい茶系の枠線 */
+  padding: 2px 13px;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* 〇を強調して温かく */
+td {
+  color: #d84315; /* オレンジ色 */
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* ／（休業）を落ち着いた色に */
+td.closed {
+  color: #bcaaa4;
+}
+
+/* 時間表示を小さくしてメリハリを */
+.time {
+  font-size: 1.15rem;
+}
+
+@media screen and (min-width: 991px) {
+  .header .jumbotron {
+    width: 80%;
+    margin: 3rem auto;
+    height: 80%;
+  }
+
+  .catchcopy h1 {
+    writing-mode: vertical-rl;
+    /* 右から左へ縦書きにする設定 */
+    -webkit-writing-mode: vertical-rl;
+    /* background-color:rgba(255,255,255,0.8); */
+    position: absolute;
+    top: 0rem;
+    right: -6rem;
+
+  }
+
+  .catchcopy p {
+    font-size: 1.25rem !important;
+    writing-mode: vertical-rl;
+    /* 右から左へ縦書きにする設定 */
+    -webkit-writing-mode: vertical-rl;
+    /* background-color:rgba(255,255,255,0.8); */
+    position: absolute;
+    top: 0rem;
+    left: -6rem;
+  }
+}
+/* nav
+-------------------------------------------------- */
+nav.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: #f9f9ff !important;
+}
+.navbar .d-flex{
+  align-items: center;
+}
+.navbar img{
+  width: 10%;
+  height: 10%;
+  margin-top: 0.5rem;
+}
+.navbar .container p{
+    font-family: "Klee One", cursive;
+  font-weight: 600;
+  font-size: 2rem !important;
+  color: #49404b !important;
+}
+
+/*    キービジュアル
+-------------------------------------------------- */
+/*下層ページ*/
+.under-layer .jumbotron {
+  background-image: url("../img/main-img.png");
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------
+    メイン
+-------------------------------------------------- */
+/* 見出しの指定 */
+h2, h3, .heading {
+  font-size: 2rem !important;
+  font-family: "游明朝", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "MS PMincho", serif;
+  font-weight: 600; /* やや細め〜標準で上品に */
+  letter-spacing: 0.05em; /* 文字間を少し広げて洗練させる */
+}
+
+/* 本文の指定 */
+body, p, li, dd, td {
+    font-size: 1.05rem !important;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400; /* 標準の太さ */
+  line-height: 2; /* 読みやすい行間 */
+    letter-spacing: 0.05em; /* 文字間を少し広げて洗練させる */
+}
+
+/*    トップページ
+-------------------------------------------------- */
+.greeting img{
+  width: 100%;
+}
+.greeting h3{
+  line-height: 1;
+  padding-bottom: 0.8rem;
+border-bottom: 3px solid #B2C2E1;
+}
+
+p.name {
+  font-family: "Yuji Boku", serif;
+  width: 10rem;
+  font-size: 2rem !important;
+  text-align: center;
+  margin: auto 0 auto auto;
+}
+p.small{
+  font-size: 1.15rem !important;
+}
+
+.ph-dn{
+  display: none;
+}
+
+@media screen and (min-width: 991px) {
+  .ph-dn {
+    display: block;
+  }
+  .pc-dn{
+    display: none;
+  }
+}
+.line-button {
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 1rem;
+  padding: 8px 10px;
+  border:solid 2px #97ac72; /* LINEカラー */
+  color: #333;
+  text-decoration: none;
+  /* font-weight: bold; */
+  /* border-radius: 50px; */
+  transition: background-color 0.3s ease;
+  width: 33%;
+}
+.line-button i{
+  color: #97ac72;
+  font-size: 1.5rem;
+  margin: auto 0.5rem auto 0;
+}
+.line-button:hover i{
+  color: #636b43;
+  font-size: 1.5rem;
+  margin: auto 0.5rem auto 0;
+    transition: color 0.3s ease;
+}
+
+.line-button:hover{
+    color: #333;
+    background-color: #97ac72;
+    text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+  .line-button {
+      width: 39%;
+  }
+}
+  @media screen and (max-width: 991px) {
+  .line-button {
+      width: 53%;
+  }
+}
+
+/*    院内紹介
+-------------------------------------------------- */
+figcaption {
+  padding-left: 1rem;
+  border-left: 3px solid #B2C2E1;
+}
+.jsc{
+  display: flex;
+  justify-content: center;
+      display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* --------------------------------------------------
+    サンプルページ
+-------------------------------------------------- */
+
+/*   チャート
+-------------------------------------------------- */
+.flow > li .flow-icon {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 50px;
+  width: 50px;
+  color: #fff;
+  background-color: #6b90db;
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.flow > li .flow-icon::before {
+  content: "";
+  border: solid transparent;
+  border-width: 8px;
+  border-top-color: #6b90db;
+  position: absolute;
+  top: calc(100% - .2rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* --------------------------------------------------
+    よくあるご質問
+-------------------------------------------------- */
+/* アコーディオンのボタン（質問部分） */
+.faq-section .btn-link {
+  color: #333333;
+  font-size: 1rem;
+  white-space: normal; /* 質問が長い場合に折り返す */
+}
+
+/* 開閉するアイコンの回転アニメーション（FontAwesome使用時） */
+.faq-section .btn-link[aria-expanded="true"] i {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+.faq-section .btn-link:not(.collapsed) i {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+.faq-section i {
+  transition: transform 0.2s ease;
+}
+
+/* 質問を開いた時のフォーカス線（点線）を消す */
+.faq-section .btn-link:focus, 
+.faq-section .btn-link:active {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+.tel-box{
+  padding: 1rem 1rem 0 1rem;
+}
+
+.ex{
+  /* font-size: 1.2rem !important; */
+  /* font-weight: 600; */
+
+  padding: 0;
+  width: 100%;
+}
+.ex p:last-child{
+  margin-bottom: 0;
+  margin-top: 0.7rem;
+}
+.ex p,.tel-box p{
+    text-align: center;
+  font-size: 1.15rem !important;
+}
+.tel-box p:last-child{
+  font-size: 1.5rem !important;
+  font-weight: 600;
+}
